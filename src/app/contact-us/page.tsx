@@ -158,15 +158,6 @@ function ContactInput() {
         </html>`,
       };
 
-      const config = {
-        headers: {
-          accept: "application/json",
-          "api-key":
-            "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",
-          "content-type": "application/json",
-        },
-      };
-
       setTimeout(() => {
         setData({
           companyName: "",
@@ -242,4 +233,3 @@ function ContactInput() {
     </FadeInComponent>
   );
 }
-// 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
