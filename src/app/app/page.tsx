@@ -3,7 +3,8 @@ import LogoGoogle from "@/assets/images/logo/logo_google.png";
 import AppImage from "@/assets/images/hero/app-image.webp";
 import { useEffect } from "react";
 function getMobileOperatingSystem() {
-  const userAgent = navigator.userAgent || navigator.vendor || window?.opera;
+  const userAgent =
+    navigator.userAgent || navigator.vendor || (window as any).opera;
 
   // Windows Phone must come first because its UA also contains "Android"
   if (/windows phone/i.test(userAgent)) {
