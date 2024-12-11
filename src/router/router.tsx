@@ -1,4 +1,5 @@
 import AboutUsPage from "@/app/about-us/page";
+import { AppPage } from "@/app/app/page";
 import ContactUsPage from "@/app/contact-us/page";
 import HomePage from "@/app/home/pages";
 import PrivacyPolicyPage from "@/app/privacy-policy/page";
@@ -23,13 +24,18 @@ export const router = createBrowserRouter([
       {
         path: "privacy-policy",
         element: <PrivacyPolicyPage />,
-      }, {
+      },
+      {
         path: "terms-and-conditions",
         element: <TermsAndConditionPage />,
       },
       {
         path: "contact-us",
         element: <ContactUsPage />,
+      },
+      {
+        path: "app",
+        element: <AppPage />,
       },
     ],
   },
